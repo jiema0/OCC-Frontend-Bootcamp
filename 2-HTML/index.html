@@ -72,7 +72,68 @@
         <a href="https://www.google.com">This is a link to Google</a>
         <br><br>
 
+        <h2>HTML Form</h2>
+        <form>
+            <!-- type attribute; name attribute; required attribute -->
+            <!-- name = means you give it a name so you have something to call it -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" required>
+            <br>
 
+            <label for="email">Email:</label>
+            <input type="email" name="email" required>
+            <br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone">
+            <br>
+
+            <!-- password type to cover it up -->
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+            <br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" rows="4" cols="50"></textarea>
+            <br>
+
+            <label for="OS">Operating System:</label>
+            <select name="OS">
+                <option value="Windows">Windows</option>
+                <option value="Mac">Mac</option>
+                <option value="Linux">Linxus</option>
+            </select>
+            <br>
+
+            <!-- radio type: group in name "option", can only choose one or another  -->
+            <!-- The name "radio" for this type of input element comes from the old-fashioned car radio buttons, where pressing one button would cause the previously selected button to pop out, indicating the user's choice -->
+            <input type="radio" name="options" value="option1"> 
+            <label for="option1">Option 1</label>
+            <input type="radio" name="options" value="option2"> 
+            <label for="option2">Option 2</label>
+            <br>
+
+            <input type="checkbox" name="Pink" value="Pink">
+            <label for="Pink">Pink</label>
+            <input type="checkbox" name="Purple" value="Purple">
+            <label for="Purple">Purple</label>
+            <input type="checkbox" name="Green" value="Green">
+            <label for="Green">Green</label>
+            <input type="checkbox" name="Yellow" value="Yellow">
+            <label for="Yellow">Yellow</label>
+            <br><br>
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <!-- inline style: everything in oneline and don't recommend -->
+        <!-- br and keep the next line empty -->
+        <!-- double quotation -->
+
+        <!-- image, alt is for when image is not loaded -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1TCWCakKNl-Bi-xBL3_TaWTJJ93Z57TJTbZ8D7N0LLg&s" alt="short image address image">
+
+    <br><br><br><br>
     </body>
 
 </html>
