@@ -1,0 +1,89 @@
+<!-- html:5 for shortcut -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* block element */
+        div {
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This is a warm-up activity for learning CSS.</p>
+    <br><br>
+
+    <h2>There are 3 ways to include CSS style. </h2>
+    <h3>Inline Style</h3>
+    <p style="background-color: pink;">This paragraph is styled using inline style.</p>
+    <br>
+
+    <h3>Internal CSS</h3>
+    <!-- division is a block element, which covers whole line/block. -->
+    <div>This div is styled using internal CSS.</div>
+    <div>This div is styled using internal CSS.</div>
+    <br>
+
+    <h3>External CSS</h3>
+    <!-- Span is an inline element cover only what it needs. -->
+    <span>This span is styled using external CSS.</span>
+    <span>This span is styled using external CSS.</span>
+    <br><br>
+
+    <h2>CSS Selectors</h2>
+    <ul>
+        <li>This is selected using element selector.
+        </li>
+        <li class="listClass">This is selected using class selector.
+        </li>
+        <li class="listClass">This is selected using class selector.
+            <!-- element and class is many to many relationship -->
+        </li>
+        <li id="listId">This is selected using id selector. 
+        </li>
+        <li value="list">This is selected using attribute selector.
+        </li>
+        <li class="listClass1">This is selected using group selector.
+        </li>
+        <li class="listClass2">This is selected using group selector.
+        </li>
+        <li class="listClass3">This is selected using descendant selector.
+        </li>
+    </ul>
+
+    <h2>Pseudo Classes</h2>
+    <hr>
+    <h3>Hover and Active Pseudo Class</h3>
+    <p>Hover over the button to change color</p>
+    <p>Click button to change color</p>
+    <!-- two classes here -->
+    <button class="hoverBtn activeBtn">Hover over me or Click me!</button>
+    <hr>
+
+    <h3>Focus Pseudo Classes</h3>
+    <p>Click on input field to focus</p>
+    <input type="text" class="focusInput">
+    <hr>
+
+    <h3>Visited Pseudo Classes</h3>
+    <a href="https://www.google.com" class="visitedLink">Visit me!</a>
+    <hr>
+
+    <br><br>
+    <h2>Pseudo Element</h2>
+    <!-- more micro style to the element, like the first letter and the the first lline, using :: -->
+    <!-- With a pseudo class, it's like you're adding a state of that element (i.e. hover, active, focus). With a pseudo element, you're creating/targeting an element that isn't really there, hence pseudo. -->
+    <p class="firstLetter">This first letter of this paragraph is bigger than the rest of text. </p>
+
+    <p class="firstLine">The first line of this paragraph is color blue Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem voluptates harum deleniti saepe perspiciatis exercitationem ratione officiis blanditiis numquam odit officia, tempora illum perferendis id labore expedita, pariatur consequatur, quaerat eum nihil? Nulla sunt veniam reiciendis aspernatur quos fuga placeat nobis sint fugiat delectus ullam obcaecati, non quidem repellendus quam!</p>
+
+    <p class="beforeAndAfter"> 100; Add some content before and after this paragraph. </p>
+
+    <p class="selectParts">Select a part of this paragraph. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus nisi id dolor fugiat fuga exercitationem perferendis alias, beatae ullam placeat quisquam, ab officia modi. Labore commodi quos quis non facilis possimus sint illum, quasi voluptatibus illo cumque numquam, at harum sequi est incidunt rem veritatis hic dolorum, nisi libero soluta.</p>
+
+<br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,73 @@
+span {
+    background-color: aquamarine;
+}
+
+li {
+    background-color: red;
+}
+
+.listClass {
+    background-color: orange;
+}
+
+#listId {
+    background-color: yellow;
+}
+
+li[value="list"] {
+    background-color: green;
+}
+
+.listClass1, .listClass2 {
+    background-color: skyblue;
+}
+
+ul .listClass3 {
+    background-color: indigo;
+    color: white;
+}
+
+/* Pseudo-Classes */
+.hoverBtn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.activeBtn:active {
+    background-color: gray;
+    color: black;
+}
+
+.focusInput:focus {
+    background-color: skyblue;
+    border-width: 5px;
+}
+
+.visitedLink:visited {
+    color: red;
+}
+
+/* Pseudo Element */
+.firstLetter::first-letter {
+    font-size: 2em;
+}
+
+.firstLine::first-line {
+    color: blue;
+}
+
+.beforeAndAfter::before {
+    /* can see it but can't selected; There are also some scenarios that you might want to protect the contents of your website and don't want them to copy and paste your content. Let's say sensitive data like recipe or personal details. Their purpose is for viewing only. */
+    content: "before $";
+    color: red;
+}
+
+.beforeAndAfter::after {
+    content: "after";
+    color: blue;
+}
+
+.selectParts::selection {
+    background-color: crimson;
+}
