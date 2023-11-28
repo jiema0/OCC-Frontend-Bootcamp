@@ -1,3 +1,9 @@
+/* Universal Selector */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* color:chocolate */
+}
+
 span {
     background-color: aquamarine;
 }
@@ -70,4 +76,39 @@ ul .listClass3 {
 
 .selectParts::selection {
     background-color: crimson;
+}
+
+/* Earlier Rule */
+.cascade {
+    color: red !important;
+}
+
+/* Later Rule */
+.cascade {
+    color: blue;
+}
+
+/* Box Model */
+.boxModel {
+    background-color: white;
+
+    /* border-color: black;
+    border-width: 5px;
+    border-style: dashed; */
+
+    border: orchid 5px solid;
+    border-radius: 50px 5px;
+    border-style: solid dotted;
+
+    /* margin: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-left: 30px; */
+
+    /* 1 value = all sides
+    2 values = top & bottom, right & left 
+    3 values = top, right & left , bottom
+    4 values = top, right, bottom, left*/
+    margin: 10px 20px 30px 40px;
+    padding: 20px 100px 10px; 
 }

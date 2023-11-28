@@ -1,0 +1,36 @@
+.font-family-size {
+	font-family: "Arial", sans-serif;
+	font-size: 20px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.line-height {
+    line-height: 3.5;
+}
+  
+  .letter-spacing {
+    letter-spacing: 5px;
+}
+
+.text-shadow {
+    text-shadow: -8px 9px 10px rgba(124, 0, 0, 0.5);
+}
