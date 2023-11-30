@@ -120,24 +120,31 @@
 .parent-box {
     height: 200px;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     margin-bottom: 20px;
     /* text-align: center; */
     background-color: aqua;
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center; */
+
 }
 
 .center-horizontal {
+    /* horizontally */
+    margin-left: auto; 
+    margin-right: auto;
     padding: 20px;
-    /* width: 150px; */
+    width: 150px;
     background-color: gray;
 }
 
 .center-vertical {
-    width: 100px;
+    width: 150px;
     height: 100px;
-    display: flex;   
     background-color: coral;
+    display: flex; 
     align-items: center;
     /* justify-content: center; */
 }
@@ -145,9 +152,11 @@
 .center-horizontal-vertical {
     width: 100px;
     height: 100px;
+    margin-left: auto; 
+    margin-right: auto;
     background-color: peru;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    text-align: center;
+    justify-content: center;
+    text-align: center; 
 }
