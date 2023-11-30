@@ -1,0 +1,153 @@
+/* Box Sizing */
+.box-content {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightgray;
+    box-sizing: content-box;
+    /* expand to outside and keep central area 200*200px */
+}
+
+.box-border {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: lightblue;
+    box-sizing: border-box;
+    /* stay at 200px * 200px and go inside */
+}
+
+/* Diaplay Property */
+.block {
+    display: block;
+    background-color: lightcoral;
+    width: 200px;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    /* couldn't set width n height to inline element */
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: lightcyan;
+    width: 200px;
+    height: 100px
+}
+
+
+/* Element Positioning */
+.static {
+    position: static;
+    background-color: lightseagreen;
+    left: 100px;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+
+.relative {
+    position: relative;
+    background-color: lightsteelblue;
+    height: 50px;
+    left: 100px;
+    top: 0;
+}
+
+.absolute {
+    /* absolutely depend on parent properties; in this case body itself, 0 from the body top*/
+    position: absolute;
+    background-color: cornflowerblue;
+    height: 50px;
+    top: 0;
+}
+
+.fixed {
+    /* sticker to the window */
+    position: fixed;
+    background-color: cornsilk;
+    width: 200px;
+    height: 50px;
+    top: 0;
+    right: 20px;
+}
+
+.sticky {
+    /* only top and left work */
+    /* has its own original position and will stick */
+    /* if you have a  section you might want the header to stick on the rest of the section as you scroll down */
+    position: sticky;
+    background-color: pink;
+    width: 200px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+} 
+
+.float-right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: indianred;
+
+}
+
+.float-left {
+    /* feels like a book. If you think about it web1(before the interactive websites web2) is just a like book(document) uploaded in the internet. */
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+}
+
+.clear-float {
+    clear: both;
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+/* Centering Element */
+.parent-box {
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    /* text-align: center; */
+    background-color: aqua;
+}
+
+.center-horizontal {
+    padding: 20px;
+    /* width: 150px; */
+    background-color: gray;
+}
+
+.center-vertical {
+    width: 100px;
+    height: 100px;
+    display: flex;   
+    background-color: coral;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.center-horizontal-vertical {
+    width: 100px;
+    height: 100px;
+    background-color: peru;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+}

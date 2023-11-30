@@ -1,0 +1,75 @@
+.flexItem {
+    width: 200px;
+    margin: 10px;
+    border: 2px black solid;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    
+}
+.cross-axis {
+    position: absolute;
+    right: 50%;
+    height: 1080px;
+    width: 3px;
+    background-color: blue;
+}
+
+.main-axis {
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 2160px;
+    background-color: red;
+}
+
+.container {
+    height: 300px;
+    background-color: yellowgreen;
+    position: relative;
+    overflow: hidden;
+}
+
+/* ======= Flexbox properties discussion starts here ========*/
+
+.flexContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    align-content: flex-start;
+    /* align-content has to be used with wrap */
+
+}
+
+.flex1 {
+    min-height: 100px;
+    /* flex-grow: 2; */
+    /* flex-shrink: 2; */
+}
+
+.flex2 {
+    min-height: 120px;
+    /* flex-grow: 1; */
+    /* growing speed, take remaining space / (1+2) and distribute to different element */
+/* 
+    flex-grow: 3;
+    flex-basis: 150px; */
+
+    align-self: center;
+    /* overwrite others and only align with self */
+}
+
+.flex3 {
+    min-height: 140px;
+    /* flex-shrink: 0; */
+    /* flex: 3 1 150px ; */
+    /* shorthand property in Flexbox that combines the flex-grow, flex-shrink, and flex-basis properties into a single declaration. */
+    /* its like having 3 boxes inside a bigger box and you play around on how you align them using x and y axis. */
+    /* smaller than 150px follow shrink 1; over 150px follow grow 3 */
+}
