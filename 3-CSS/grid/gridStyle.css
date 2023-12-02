@@ -1,0 +1,70 @@
+.gridItem {
+    min-width: 20px;
+    margin: 10px;
+    border: 2px black solid;
+    background-color: lightblue;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+.cross-axis {
+    position: absolute;
+    right: 50%;
+    height: 1080px;
+    width: 3px;
+    background-color: blue;
+}
+
+.main-axis {
+    position: absolute;
+    top: 50%;
+    height: 3px;
+    width: 2160px;
+    background-color: red;
+}
+
+.container {
+    background-color: yellowgreen;
+}
+
+/* ======= gridbox properties discussion starts here ========*/
+/* flexbox is more 1 dimension. Grid is easier to move */
+
+.gridContainer {
+    display: grid;
+    /* how many columns and size, can be fraction and perctage 1fr, 30% */
+    /* grid-template-columns: 100px 200px ; */
+    /* grid-template-rows: 100px 50px 150px; 
+    grid-template-columns: 30% 30% 40%; */
+    /* grid-template-rows: 1fr 50px 1fr; */
+
+    /* like a 3x3 metrics now with specific cell name */
+    grid-template-areas:
+        'header  header . Jie'
+        'side side side Jie' 
+        '. . . Jie' ;
+
+    /* control the rows height */
+    grid-auto-rows: 100px;
+} 
+
+.grid1{
+    grid-area: header;
+}
+
+.grid2 {
+    /* first 2 means starting from 2; span means taking n cols */
+    /* grid-column: 2 / span 1; */
+    grid-area: side;
+}
+
+.grid3 {
+    /* start from 2 and take 2 columns */
+    /* grid-column: 2 / span 2;
+    grid-row: 2 / span 2; */
+    /* start from 2 and ends before col#3 */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
