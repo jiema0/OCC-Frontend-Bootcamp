@@ -33,5 +33,10 @@ console.log("The index of Batman is", superheroes.indexOf("Batman")) ;
 
 console.log("Joined Array: ", superheroes.join('-'));
 
-let slicedArray = superheroes.slice(1, 3);
-console.log(slicedArray);
+let slicedArray = superheroes.slice(0, 3);
+console.log("Sliced Array:", slicedArray);
+console.log("Superheros Array:", superheroes);
+
+let removedElements = superheroes.splice(2, 2);
+console.log("Removed Elements:", removedElements);
+console.log("Updated array:", superheroes);
